@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+      padding: 0%;
+      margin: 0%;
+      box-sizing: border-box;
+      font-family: "Nunito", sans-serif;
+}
+
+:root {
+      --bgcolor: #000;
+      --bgcolor_test: #333;
+      --color: #fff;
+      --padding: 1rem;
+      --padding-tb: 0.25em;
+      --padding-side: 2.5%;
+      --margin: 1em;
+}
+
+/* || BLOCKS || */
+
+html {
+      background-color: var(--bgcolor);
+      color: var(--color);
+}
+
+p {
+      padding: 2rem;
+}
+
+a,
+a:visited {
+      color: var(--color);
+      text-decoration: none;
+}
+
+a:active,
+a:hover {
+      color: beige;
+}
+
+/* || ELEMENTS || */
+
+/* HEADER */
+.header {
+      background-color: #202020;
+      color: #fff;
+      padding: 1.5rem;
+}
+
+.header__h1 {
+      background-color: #353535;
+      padding: 0.5rem 1rem;
+      width: 25%;
+      display: flex;
+      justify-content: center;
+}
+
+div.search {
+      color: red;
+      width: 20vw;
+      padding: 0.25em;
+      border: var(--color);
+      border-style: solid;
+      border-radius: 1em;
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      top: 2em;
+      left: 70%;
+}
+
+
+/* MAIN */
+
+/* nav bar */
+.main__nav {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: #332;
+      border-bottom: #fff;
+}
+
+.main__ul {
+      padding: 0.25rem;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 1rem;
+}
+
+/* main part */
+.main__h1 {
+      color: var(--color);
+      width: 100%;
+      padding: var(--padding-tb) var(--padding-side);
+}
+
+.main__description {
+      padding: var(--padding);
+      margin: var(--margin);
+      max-width: 50%;
+      background-color: var(--bgcolor_test);
+      color: var(--color);
+}
+
+.main__types {
+      color: var(--color);
+      padding: var(--padding);
+      margin: var(--margin);
+      max-width: 50%;
+      background-color: var(--bgcolor_test);
+}
+
+.main__education {
+      padding: var(--padding);
+      margin: var(--margin);
+      max-width: 50%;
+      background-color: var(--bgcolor_test);
+      color: var(--color);
+}
+
+.main__games {
+      padding: var(--padding);
+      margin: var(--margin);
+      max-width: 50%;
+      background-color: var(--bgcolor_test);
+      color: var(--color);
+}
+
+.main__meeting {
+      padding: var(--padding);
+      margin: var(--margin);
+      max-width: 50%;
+      background-color: var(--bgcolor_test);
+      color: var(--color);
+}
+
+.main__tours {
+      padding: var(--padding);
+      margin: var(--margin);
+      max-width: 50%;
+      background-color: var(--bgcolor_test);
+      color: var(--color);
+}
+
+.main__future {
+      padding: var(--padding);
+      margin: var(--margin);
+      max-width: 50%;
+      background-color: var(--bgcolor_test);
+      color: var(--color);
+}
+
+/* in between sections*/
+.div__transition {
+      display: block;
+      padding: 25vh;
+}
+
+/* FOOTER */
+.contact {
+      padding: var(--padding);
+      margin: var(--margin);
+      background: var(--bgcolor_test);
+}
+
+.socials {
+      padding: 0.25rem;
+      padding-bottom: 1rem;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+}
+
+
+/* || MODIFIERS || */
+
+.main--right {
+      display: flex;
+      float: right;
+      flex-flow: row-reverse;
+      flex-direction: column;
+}
+
+.main--left {
+      display: flex;
+      float: left;
+      flex-direction: column;
+}
