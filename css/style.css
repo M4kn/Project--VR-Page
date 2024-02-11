@@ -7,6 +7,12 @@
       font-family: "Nunito", sans-serif;
 }
 
+img {
+      display: block;
+      width: 100%;
+      height: auto;
+}
+
 :root {
       --bgcolor: #000;
       --bgcolor_test: #333;
@@ -43,21 +49,21 @@ a:hover {
 
 /* HEADER */
 .header {
-      background-color: #202020;
+      background-image: radial-gradient(rgb(0, 0, 120), black);
+      padding: var(--padding);
       color: var(--color);
-      padding: 1.5rem;
+      height: 13vh;
 }
 
 .header__h1 {
-      background-color: #353535;
-      padding: 0.5rem 1rem;
+      padding: 1.5rem 1rem;
       width: 25%;
       display: flex;
       justify-content: center;
 }
 
 div.search {
-      background-color: hsla(0, 0%, 20%, 0.8);
+      background-color: hsla(0, 0%, 20%, 0.6);
       color: var(--color);
       width: 20vw;
       padding: 0.25em;
@@ -71,7 +77,6 @@ div.search {
       left: 70%;
 }
 
-
 /* MAIN */
 
 /* nav bar */
@@ -79,7 +84,7 @@ div.search {
       position: sticky;
       top: 0;
       width: 100%;
-      background-color: rgb(49, 49, 49);
+      background-color: black;
       border-bottom: #fff;
 }
 
@@ -161,6 +166,11 @@ div.search {
 }
 
 /* FOOTER */
+.footer__h1 {
+      display: flex;
+      justify-content: center;
+}
+
 .contact {
       padding: var(--padding);
       margin: var(--margin);
@@ -182,8 +192,8 @@ div.search {
 .main--right {
       display: flex;
       float: right;
-      flex-flow: row-reverse;
-      flex-direction: column;
+      flex-direction: row-reverse;
+      align-items: center;
 }
 
 .main--left {
