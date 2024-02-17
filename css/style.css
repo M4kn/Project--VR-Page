@@ -49,10 +49,10 @@ a:hover {
 
 /* HEADER */
 .header {
-      background-image: radial-gradient(rgb(0, 0, 120), black);
+      background-image: radial-gradient(rgb(0, 0, 120), #070713);
       padding: var(--padding);
       color: var(--color);
-      height: 13vh;
+      height: 15vh;
 }
 
 .header__h1 {
@@ -60,6 +60,14 @@ a:hover {
       width: 25%;
       display: flex;
       justify-content: center;
+}
+
+.figure__h1 {
+      display: flex;
+      position: absolute;
+      top: 2vh;
+      width: 25%;
+      height: 10%;
 }
 
 div.search {
@@ -86,6 +94,7 @@ div.search {
       width: 100%;
       background-color: black;
       border-bottom: #fff;
+      z-index: 2;
 }
 
 .main__ul {
@@ -96,7 +105,7 @@ div.search {
       gap: 1rem;
 }
 
-/* main part */
+/* main sections */
 .main__h1 {
       color: var(--color);
       width: 100%;
@@ -106,9 +115,11 @@ div.search {
 .main__description {
       padding: var(--padding);
       margin: var(--margin);
+      margin-top: 5vh;
       max-width: 50%;
       background-color: var(--bgcolor_test);
       color: var(--color);
+      animation: showHeadset 5s 0.5s;
 }
 
 .main__types {
@@ -159,10 +170,49 @@ div.search {
       color: var(--color);
 }
 
+/* main divs */
+.div__description {
+      width: 45%;
+      height: auto;
+      display: flex;
+      position: relative;
+      animation: showHeadset 5s 0.5s;
+}
+
+@keyframes showHeadset {
+      0% {
+            opacity: 0%;
+      }
+
+      100% {
+            opacity: 100%;
+      }
+}
+
+.div__types {
+      width: 30%;
+      height: auto;
+      display: flex;
+      position: relative;
+}
+
+.div__education {
+      width: 25%;
+      height: auto;
+      display: flex;
+      position: relative;
+      left: 10%;
+}
+
 /* in between sections*/
 .div__transition {
       display: block;
       padding: 25vh;
+}
+
+/* main article */
+.main__article {
+      background-image: radial-gradient(rgb(0, 0, 28), black)
 }
 
 /* FOOTER */
