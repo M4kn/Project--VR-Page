@@ -52,27 +52,28 @@ a:hover {
       background-image: radial-gradient(rgb(0, 0, 80), #070713);
       padding: var(--padding);
       color: var(--color);
-      height: 15vh;
+      height: 100px;
+}
+
+.header__div {
+      width: 300px;
+      height: 40px;
 }
 
 .header__h1 {
-      padding: 1.5rem 1rem;
-      width: 25%;
+      height: 40px;
       display: flex;
       justify-content: center;
+      z-index: 1;
 }
 
-/* .header__div {
-      adauga header-ul si imaginea intr-un singur div 
-} 
-*/
-
 .header__figure {
+      width: 300px;
+      height: 80px;
       display: flex;
       position: absolute;
-      top: 2vh;
-      width: 25%;
-      height: 10%;
+      top: 0px;
+      z-index: 0;
 }
 
 div.search {
@@ -126,7 +127,18 @@ div.search {
       max-width: 50%;
       background-color: var(--bgcolor_test);
       color: var(--color);
-      animation: showHeadset 5s 0.5s;
+      animation: showDescription 4.5s;
+}
+
+@keyframes showDescription {
+      0% {
+            opacity: 0%;
+
+      }
+
+      100% {
+            opacity: 100%;
+      }
 }
 
 .main__types {
@@ -183,16 +195,23 @@ div.search {
       height: auto;
       display: flex;
       position: relative;
-      animation: showHeadset 5s 0.5s;
+      animation: showHeadset ease-in-out 4s;
 }
 
 @keyframes showHeadset {
       0% {
             opacity: 0%;
+            top: -50px;
+      }
+
+      10% {
+            opacity: 0%;
+            top: -50px;
       }
 
       100% {
             opacity: 100%;
+            top: 0px;
       }
 }
 
