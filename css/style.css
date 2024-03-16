@@ -14,13 +14,11 @@ img {
 }
 
 :root {
-      --bgcolor: #000;
+      --bgcolor: #030303;
       --bgcolor_test: #333;
       --color: whitesmoke;
       --padding: 1rem;
-      --padding-tb: 0.25em;
-      --padding-side: 2.5%;
-      --margin: 1em;
+      --margin: 1rem;
 }
 
 /* || BLOCKS || */
@@ -45,24 +43,28 @@ a:hover {
       color: beige;
 }
 
+
+
 /* || ELEMENTS || */
 
 /* HEADER */
 .header {
       background-image: radial-gradient(rgb(0, 0, 80), #070713);
-      padding: var(--padding);
+      /*       padding: var(--padding); */
       color: var(--color);
       height: 100px;
 }
 
 .header__div {
       width: 300px;
-      height: 40px;
+      height: inherit;
 }
 
 .header__h1 {
-      height: 40px;
+      height: 50px;
       display: flex;
+      position: relative;
+      top: 25px;
       justify-content: center;
       z-index: 1;
 }
@@ -72,11 +74,10 @@ a:hover {
       height: 80px;
       display: flex;
       position: absolute;
-      top: 0px;
-      z-index: 0;
+      top: 5px;
 }
 
-div.search {
+.search {
       background-color: hsla(0, 0%, 20%, 0.6);
       color: var(--color);
       width: 20vw;
@@ -123,7 +124,7 @@ div.search {
 .main__description {
       padding: var(--padding);
       margin: var(--margin);
-      margin-top: 5vh;
+      margin-top: 10px;
       max-width: 50%;
       background-color: var(--bgcolor_test);
       color: var(--color);
@@ -218,27 +219,27 @@ div.search {
 .div__types {
       width: 30%;
       height: auto;
-      display: flex;
-      position: relative;
 }
 
 .div__education {
       width: 25%;
       height: auto;
-      display: flex;
-      position: relative;
-      left: 10%;
 }
 
 /* in between sections*/
 .div__transition {
+      height: 800px;
+      width: auto;
       display: block;
-      padding: 25vh;
 }
 
 /* main article */
 .main__article {
-      background-image: radial-gradient(rgb(0, 0, 28), black)
+      background-image: radial-gradient(rgb(0, 0, 28), black);
+      padding: 0px 5px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
 }
 
 /* FOOTER */
@@ -264,16 +265,3 @@ div.search {
 
 
 /* || MODIFIERS || */
-
-.main--right {
-      display: flex;
-      float: right;
-      flex-direction: row-reverse;
-      align-items: center;
-}
-
-.main--left {
-      display: flex;
-      float: left;
-      flex-direction: column;
-}
