@@ -11,6 +11,7 @@ img {
       display: block;
       width: 100%;
       height: auto;
+      border-radius: 50%;
 }
 
 :root {
@@ -43,6 +44,11 @@ a:hover {
       color: beige;
 }
 
+ul {
+      padding: var(--padding);
+}
+
+/* li {} */
 
 
 /* || ELEMENTS || */
@@ -242,6 +248,13 @@ a:hover {
       align-items: center;
 }
 
+/*lists*/
+.meeting__p,
+.tours__p {
+      padding: 5px 10px 20px;
+}
+
+
 /* FOOTER */
 .footer__h1 {
       display: flex;
@@ -265,3 +278,12 @@ a:hover {
 
 
 /* || MODIFIERS || */
+.meeting__p--1,
+.tours__p--1 {
+      padding-top: 10px;
+      padding-bottom: 15px;
+}
+
+.img--chart {
+      border-radius: 0%;
+}
