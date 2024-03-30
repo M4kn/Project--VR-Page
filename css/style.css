@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/*search for a font*/
 * {
       padding: 0%;
       margin: 0%;
       box-sizing: border-box;
-      font-family: "Nunito", sans-serif;
+      font-family: "Urbanist", sans-serif;
 }
 
 img {
@@ -16,8 +16,8 @@ img {
 
 :root {
       --bgcolor: #030303;
-      --bgcolor_test: #333;
-      --color: whitesmoke;
+      /*       --bgcolor_test: #333; */
+      --color: #FFFCEB;
       --padding: 1rem;
       --margin: 1rem;
 }
@@ -27,28 +27,42 @@ img {
 html {
       background-color: var(--bgcolor);
       color: var(--color);
+      scroll-behavior: smooth;
 }
 
 p {
-      padding: 2rem;
+      padding: 1.5rem;
 }
 
 a,
 a:visited {
       color: var(--color);
-      text-decoration: none;
+      text-decoration: underline #fff1aa;
 }
 
 a:active,
 a:hover {
-      color: beige;
+      color: #FFE666;
 }
 
 ul {
       padding: var(--padding);
 }
 
-/* li {} */
+li {
+      margin-left: 15px;
+}
+
+section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+h2 {
+      color: #FFF4CC;
+      padding-bottom: 10px;
+}
 
 
 /* || ELEMENTS || */
@@ -118,6 +132,16 @@ ul {
       display: flex;
       justify-content: space-evenly;
       gap: 1rem;
+}
+
+/* main article */
+
+.main__article {
+      background-image: radial-gradient(rgb(0, 0, 28), black);
+      padding: 0px 5px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
 }
 
 /* main sections */
@@ -196,7 +220,9 @@ ul {
       color: var(--color);
 }
 
+
 /* main divs */
+
 .div__description {
       width: 45%;
       height: auto;
@@ -223,12 +249,32 @@ ul {
 }
 
 .div__types {
-      width: 30%;
+      width: 25%;
       height: auto;
 }
 
 .div__education {
       width: 25%;
+      height: auto;
+}
+
+.div__gaming {
+      width: 45%;
+      height: auto;
+}
+
+.div__tours {
+      width: 30%;
+      height: auto;
+}
+
+.div__meeting {
+      width: 40%;
+      height: auto;
+}
+
+.div__future {
+      width: 70%;
       height: auto;
 }
 
@@ -239,14 +285,6 @@ ul {
       display: block;
 }
 
-/* main article */
-.main__article {
-      background-image: radial-gradient(rgb(0, 0, 28), black);
-      padding: 0px 5px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-}
 
 /*lists*/
 .meeting__p,
@@ -278,12 +316,31 @@ ul {
 
 
 /* || MODIFIERS || */
-.meeting__p--1,
-.tours__p--1 {
-      padding-top: 10px;
-      padding-bottom: 15px;
-}
 
 .img--chart {
       border-radius: 0%;
+}
+
+.main__article--last {
+      flex-direction: column-reverse;
+}
+
+.description--p,
+.main__h1 {
+      position: relative;
+      z-index: 1;
+}
+
+.a--nav {
+      text-decoration: none;
+}
+
+.meeting--p,
+.tours--p {
+      margin-left: 15px;
+      padding: 5px 10px 30px 15px;
+}
+
+.li--types {
+      padding-bottom: 15px;
 }
