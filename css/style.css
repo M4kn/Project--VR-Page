@@ -176,7 +176,7 @@ figcaption {
       animation: showDescription 4.5s;
 }
 
-/* @keyframes showDescription {
+@keyframes showDescription {
       0% {
             opacity: 0%;
 
@@ -185,7 +185,7 @@ figcaption {
       100% {
             opacity: 100%;
       }
-} */
+}
 
 .main__types {
       color: var(--color);
@@ -246,7 +246,7 @@ figcaption {
       animation: showHeadset ease-in-out 4s;
 }
 
-/* @keyframes showHeadset {
+@keyframes showHeadset {
       0% {
             opacity: 0%;
             top: -50px;
@@ -261,7 +261,7 @@ figcaption {
             opacity: 100%;
             top: 0px;
       }
-} */
+}
 
 .div__types {
       width: 25%;
@@ -363,7 +363,7 @@ figcaption {
 }
 
 .social-item {
-      margin: 10px;
+      margin: 10px 20px;
 }
 
 .social-link {
@@ -371,7 +371,7 @@ figcaption {
       width: 50px;
       height: 50px;
       border-radius: 10px;
-      background: linear-gradient(to bottom left, #210da1, #d802b1);
+      background: linear-gradient(to bottom left, #1c03a9, #b70597);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -491,3 +491,9 @@ figcaption {
 
 
 /* footer*/
+.p--back {
+      font-size: 10px;
+      display: flex;
+      position: relative;
+      justify-content: center;
+}
