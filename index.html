@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
 
   <body>
     <header class="header">
       <div class="header__div">
-        <h1 class="header__h1">Virtual Reality</h1>
+        <p class="header__p">Virtual Reality</p>
         <figure class="header__figure">
           <img
             src="img/glowing-frame.png"
@@ -36,8 +40,16 @@
 
       <article class="main__article">
         <section class="main__description">
+          <!--           <img
+            src="img/11698.png"
+            alt="bg"
+            width="500"
+            height="500"
+            class="description--img"
+          /> -->
+
           <div class="div__h2">
-            <h2 class="main__h2">What Is VR?</h2>
+            <h2 class="main__h2">What Is Virtual Reality?</h2>
           </div>
           <p class="description--p">
             Virtual Reality is a technology that creates a simulated world using
@@ -49,14 +61,19 @@
             technology. Other distinct types of VR-style technology include
             <a
               href="https://www.sap.com/romania/products/scm/industry-4-0/what-is-augmented-reality.html#:~:text=Augmented%20reality%20definition,real-life%20environments%20and%20objects."
+              target="_blank"
               >augmented reality</a
             >
             (AR) and
-            <a href="https://en.wikipedia.org/wiki/Mixed_reality"
+            <a
+              href="https://en.wikipedia.org/wiki/Mixed_reality"
+              target="_blank"
               >mixed reality</a
             >
             (MR), sometimes referred to as
-            <a href="https://en.wikipedia.org/wiki/Extended_reality"
+            <a
+              href="https://en.wikipedia.org/wiki/Extended_reality"
+              target="_blank"
               >extended reality</a
             >
             (XR).
@@ -69,6 +86,7 @@
               alt="vr headset"
               width="1920"
               height="1080"
+              class="description--headset"
             />
           </figure>
         </div>
@@ -106,12 +124,12 @@
 
       <div class="div__transition"></div>
 
-      <article class="main__article">
-        <section class="main__education" id="education">
+      <article class="main__article" id="education">
+        <section class="main__education">
           <div class="div__h2">
             <h2 class="main__h2">Virtual Reality in Education</h2>
           </div>
-          <p>
+          <p class="education--p">
             VR holds immense potential in education across various subjects. It
             offers immersive experiences, enabling students to conduct safe
             experiments and visit virtual museums or locations. In physics,
@@ -133,7 +151,7 @@
 
       <div class="div__transition"></div>
 
-      <article class="main__article">
+      <article class="main__article" id="games">
         <div class="div__gaming">
           <figure>
             <img
@@ -144,11 +162,11 @@
             />
           </figure>
         </div>
-        <section class="main__games" id="games">
+        <section class="main__games">
           <div class="div__h2">
             <h2 class="main__h2">Virtual Reality in Gaming</h2>
           </div>
-          <p>
+          <p class="games--p">
             Traditional gaming has its charm, but VR is quickly becoming the new
             standard due to its unparalleled immersion. Instead of just
             controlling a character on a screen, you're thrust into the heart of
@@ -168,8 +186,8 @@
 
       <div class="div__transition"></div>
 
-      <article class="main__article">
-        <section class="main__tours" id="tours">
+      <article class="main__article" id="tours">
+        <section class="main__tours">
           <div class="div__h2">
             <h2 class="main__h2">Virtual Reality in Tourism</h2>
           </div>
@@ -225,13 +243,13 @@
 
       <div class="div__transition"></div>
 
-      <article class="main__article">
+      <article class="main__article" id="meeting">
         <div class="div__meeting">
           <figure>
             <img src="img/meeting.png" alt="meeting" width="500" height="500" />
           </figure>
         </div>
-        <section class="main__meeting" id="meeting">
+        <section class="main__meeting">
           <div class="div__h2">
             <h2 class="main__h2">Virtual Reality for Meeting Rooms</h2>
           </div>
@@ -272,7 +290,8 @@
 
       <div class="div__transition"></div>
 
-      <article class="main__article main__article--last">
+      <article class="main__article main__article--last" id="future">
+        <h2 class="main__h2">The Future of Virtual Reality</h2>
         <div class="div__future">
           <figure>
             <img
@@ -282,15 +301,39 @@
               height="500"
               class="img--chart"
             />
+            <figcaption>
+              <p class="chart--caption">
+                Data Source: Goldman Sachs Global Investment Research, Image ©
+                <a
+                  href="https://www.statista.com/chart/4602/virtual-and-augmented-reality-software-revenue/"
+                  target="_blank" class="chart--caption"
+                  >Statista</a
+                >
+              </p>
+            </figcaption>
           </figure>
         </div>
-        <section class="main__future" id="future">
-          <h2 class="main__h2">Future Of VR</h2>
+        <section class="main__future">
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex odit
-            suscipit nemo esse quibusdam a ullam! Maiores labore facilis
-            expedita, facere vero modi, odio sapiente rerum unde nesciunt eum
-            nulla?
+            The anticipated impact of virtual reality (VR) and augmented reality
+            (AR) technologies extends well beyond entertainment, potentially
+            reaching an annual value of $80 billion by 2025, as estimated by
+            <a
+              href="https://www.goldmansachs.com/intelligence/pages/virtual-and-augmented-reality-report.html"
+              target="_blank"
+              >Goldman Sachs</a
+            >. This projection splits into $35 billion for software and $45
+            billion for hardware, highlighting the vast application spectrum of
+            these technologies.
+          </p>
+          <p>
+            Video gaming is identified as a primary growth driver, with live
+            events and video entertainment also seen as key consumer
+            applications. However, the significance of VR and AR is not confined
+            to consumer use. Nearly half of the projected revenue is expected to
+            come from the enterprise and public sectors, with healthcare and
+            engineering emerging as sectors ripe for transformation through VR
+            and AR, demonstrating their wide-reaching potential.
           </p>
         </section>
       </article>
@@ -311,13 +354,42 @@
         </p>
       </section>
 
-      <section>
-        <nav class="footer__nav">
-          <ul class="socials">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
+      <section class="social">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+
+        <nav>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </li>
           </ul>
         </nav>
       </section>
