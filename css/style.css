@@ -10,7 +10,6 @@
 
 :root {
       --bgcolor: #030303;
-      /*       --bgcolor_test: #333; */
       --color: #fffceb;
       --padding: 1rem;
       --margin: 1rem;
@@ -157,7 +156,7 @@ figcaption {
 /* main article */
 
 .main__article {
-      background-image: radial-gradient(rgb(0, 0, 28), black);
+/*       background-image: radial-gradient(rgb(0, 0, 28), black); */
       padding: 0px 5px;
       display: flex;
       justify-content: space-around;
@@ -165,7 +164,6 @@ figcaption {
 }
 
 /* main sections */
-
 .main__description {
       padding: var(--padding);
       margin: var(--margin);
@@ -423,18 +421,6 @@ figcaption {
 }
 
 /* description */
-.description--img {
-      display: flex;
-      position: absolute;
-      border-radius: 0px;
-      min-height: 150px;
-      max-height: 300px;
-      width: inherit;
-      left: calc(35px + 1rem);
-      top: 145px;
-
-}
-
 .description--headset {
       border-radius: 0px;
 }
@@ -446,6 +432,16 @@ figcaption {
       z-index: 1;
 }
 
+.description--bg {
+      display: flex;
+      position: absolute;
+      border-radius: 0px;
+      height: 30rem;
+      width: 50%;
+      left: calc(35px + 1rem);
+      top: 145px;
+      opacity: 60%;
+}
 
 /* types */
 
@@ -496,4 +492,42 @@ figcaption {
       display: flex;
       position: relative;
       justify-content: center;
+}
+
+
+
+
+
+/* BACKGROUND */
+
+.main__article {
+      background-image: linear-gradient(to bottom, black, rgb(0, 0, 28));
+}
+
+.main__article .color {
+      display: flex;
+      position: absolute;
+}
+
+.main__article .color:nth-child(1){
+      background-color: #d31376;
+      width: 200px;
+      height: 300px;
+      top: 100px;
+      filter: blur(150px);
+}
+.main__article .color:nth-child(2){
+      background-color: #066a80;
+      width: 200px;
+      height: 150px;
+      left: 50px;
+      filter: blur(90px);
+}
+.main__article .color:nth-child(3){
+      background-color: #45079b;
+      width: 150px;
+      height: 150px;
+      top: 330px;
+      right: 0;
+      filter: blur(75px);
 }
