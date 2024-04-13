@@ -21,6 +21,7 @@ html {
       background-color: var(--bgcolor);
       color: var(--color);
       scroll-behavior: smooth;
+      overflow-x: hidden;
 }
 
 
@@ -171,13 +172,17 @@ figcaption {
       max-width: 50%;
       background-color: var(--bgcolor_test);
       color: var(--color);
-      animation: showDescription 4.5s;
+      animation: showDescription 7s ease;
 }
 
 @keyframes showDescription {
       0% {
             opacity: 0%;
 
+      }
+
+      50% {
+            opacity: 0%;
       }
 
       100% {
@@ -241,7 +246,7 @@ figcaption {
       height: auto;
       display: flex;
       position: relative;
-      animation: showHeadset ease-in-out 4s;
+      animation: showHeadset ease-in-out 7s;
 }
 
 @keyframes showHeadset {
@@ -250,7 +255,7 @@ figcaption {
             top: -50px;
       }
 
-      10% {
+      50% {
             opacity: 0%;
             top: -50px;
       }
@@ -502,7 +507,8 @@ figcaption {
 /* BACKGROUND */
 
 .main__article {
-      background-image: linear-gradient(to bottom, black, rgb(0, 0, 28));
+      background-image: radial-gradient(rgb(0, 0, 38),black);
+      animation: showBackground 2s;
 }
 
 .main__article .color {
@@ -511,26 +517,79 @@ figcaption {
 }
 
 .main__article .color:nth-child(1) {
-      background-color: #d31376;
+      background-color: #ac0d8a;
       width: 200px;
       height: 300px;
       top: 100px;
-      filter: blur(150px);
+      filter: blur(130px);
+      animation: showColor1 3s;
 }
 
 .main__article .color:nth-child(2) {
-      background-color: #066a80;
+      background-color: #0425b7;
       width: 200px;
       height: 150px;
-      left: 50px;
+      left: 100px;
       filter: blur(90px);
+      animation: showColor2 4s;
 }
 
 .main__article .color:nth-child(3) {
-      background-color: #45079b;
-      width: 150px;
-      height: 150px;
+      background-color: #3e0583;
+      width: 250px;
+      height: 200px;
       top: 330px;
-      right: 0;
-      filter: blur(75px);
+      right: -0px;
+      filter: blur(100px);
+      animation: showColor3 4s;
+}
+
+@keyframes showColor1{
+      0% {
+            opacity: 0%;
+      }
+
+      100% {
+            opacity: 100%;
+      }
+}
+
+@keyframes showColor2{
+      0% {
+            opacity: 0%;
+      }
+
+      25% {
+            opacity: 0%;
+      }
+
+      100%{
+            opacity: 100%;
+      }
+}
+
+@keyframes showColor3 {
+      0% {
+            opacity: 0%;
+      }
+
+      50% {
+            opacity: 0%;
+      }
+
+      100% {
+            opacity: 100%;
+      }
+}
+
+@keyframes showBackground {
+      0% {
+            opacity: 0%;
+            background-image: radial-gradient(rgb(0, 0, 38),black);
+      }
+
+      100% {
+            opacity: 100%;
+            background-image: radial-gradient(rgb(0, 0, 38),black);
+      }
 }
