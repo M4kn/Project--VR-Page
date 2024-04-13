@@ -131,8 +131,9 @@ figcaption {
       left: 70%;
 }
 
-
-
+.icon {
+      opacity: 70%;
+}
 
 /* MAIN */
 
@@ -594,80 +595,6 @@ figcaption {
             opacity: 100%;
       }
 }
-
-
-
-
-/* .bottom {
-      display: flex;
-      height: 100px;
-      width: 50%;
-      align-items: center;
-      justify-content: space-around;
-} */
-/* .between {
-      width: 50px;
-      height: 50px;
-      background-color: yellow;
-} */
-
-/* .div__transition {
-      background-image: linear-gradient(to top, rgb(0, 0, 28), rgb(0, 0, 10));
-      display: flex;
-      height: 350px;
-      justify-content: space-around;
-      align-items: center;
-} */
-
-/* .div__transition2 {
-      background-image: linear-gradient(to bottom, rgb(0, 0, 28), rgb(0, 0, 10));
-      display: flex;
-      height: 350px;
-      justify-content: space-between;
-      align-items: center;
-} */
-
-/* .div__transition2 {
-      height: 350px;
-      display: grid;
-      grid-template-areas: 
-      'blank blank blank blank'
-      'blank blank blank color3'
-      'blank color4 blank blank';
-}
-
-.bg__color1 {
-      background-color: white;
-      height: 50px;
-      width: 50px;
-      grid-area: d1;
-}
-
-.bg__color2 {
-      background-color: white;
-      height: 50px;
-      width: 50px;
-      grid-area: d2;
-}
-
-.bg__color3 {
-      background-color: white;
-      height: 50px;
-      width: 50px;
-      grid-area: color3;
-}
-
-.bg__color4 {
-      background-color: white;
-      height: 50px;
-      width: 50px;
-      grid-area: color4;
-}
-
-.blank {
-      grid-area: blank;
-} */
-
 
 .transition {
       background-image: linear-gradient(to top, rgb(0, 0, 28), rgb(0, 0, 10));
