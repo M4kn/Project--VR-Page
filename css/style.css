@@ -142,13 +142,14 @@ figcaption {
       position: sticky;
       top: 0;
       width: 100%;
-      background-color: black;
+      height: 40px;
+      background-color: hsla(0, 0%, 5%, 0.8);
       border-bottom: #fff;
       z-index: 2;
 }
 
 .main__ul {
-      padding: 0.25rem;
+      padding: 10px 0px 10px;
       list-style-type: none;
       display: flex;
       justify-content: space-evenly;
